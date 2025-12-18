@@ -28,21 +28,20 @@ function removeTask() {
 }
 
 function markTaskComplete() {
-  // Function to mark a task as complete
-  this.parentElement.style.textDecoration = "line-through";
+  this.parentElement.classList.toggle("completed");
 }
 
 function filterTasks() {
-    // Function to filter tasks based on their completion status
-    const filter = document.getElementById("search").value.trim().toLowerCase();
+  // Function to filter tasks based on their completion status
+  const filter = document.getElementById("search").value.trim().toLowerCase();
 
-    const tasks = document.getElementById("task-list").children;
+  const tasks = document.getElementById("task-list").children;
 
-    for (let task of tasks) {
-        if (task.textContent.toLowerCase().includes(filter)) {
-            task.style.display = "";
-        } else {
-            task.style.display = "none";
-        }
+  for (let task of tasks) {
+    if (task.textContent.toLowerCase().includes(filter)) {
+      task.style.display = "";
+    } else {
+      task.style.display = "none";
     }
+  }
 }
