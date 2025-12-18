@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introduction to DOM</title>
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <h1 id="title">this is a title p tag</h1>
+    <p class="info">This is a p1</p>
+    <p class="info">This is a p2</p>
+    <button onclick="highlightText()">click on this button</button>
+  </body>
+  <hr />
+
+  <input type="text" id="searchInput" placeholder="Search something..." onkeyup="filterList()"/>
+  <ul id="suggestionsList">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Orange</li>
+    <li>Mango</li>
+    <li>Pineapple</li>
+    <li>Grapes</li>
+    <li>Strawberry</li>
+    <li>Watermelon</li>
+    <li>Blueberry</li>
+    <li>Raspberry</li>
+  </ul>
+</html>
